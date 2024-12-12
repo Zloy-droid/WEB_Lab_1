@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Южный Парк: Персонажи</title>
+    <style>
+        body {
+            background-color: #eae2c7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            flex-wrap: wrap;
+        }
+
+        .character {
+            position: relative;
+            width: 120px;
+            height: 180px;
+            margin: 20px;
+            border-radius: 10px;
+        }
+
+        /* Шапка */
+        .kenny .hood,
+        .stan .hat,
+        .kyle .hat {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 0;
+            left: 10px;
+            border-radius: 50%;
+        }
+
+        .kenny .hood {
+            background-color: #d66a26;
+        }
+
+        .stan .hat {
+            background-color: #003366;
+        }
+
+        .kyle .hat {
+            background-color: #009933;
+        }
+
+        /* Тело */
+        .body {
+            width: 100px;
+            height: 120px;
+            position: absolute;
+            top: 80px;
+            left: 10px;
+            border-radius: 20px;
+        }
+
+        .kenny .body {
+            background-color: #d66a26;
+        }
+
+        .stan .body {
+            background-color: #ff4f00;
+        }
+
+        .kyle .body {
+            background-color: #ff9900;
+        }
+
+        /* Глаза */
+        .eyes {
+            position: absolute;
+            top: 40px;
+            left: 18px;
+            width: 84px;
+            height: 30px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .left-eye,
+        .right-eye {
+            width: 22px;
+            height: 22px;
+            background-color: white;
+            border-radius: 50%;
+            position: relative;
+            top: 5px;
+        }
+
+        .left-eye::before,
+        .right-eye::before {
+            content: '';
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            width: 10px;
+            height: 10px;
+            background-color: #000;
+            border-radius: 50%;
+        }
+
+        /* Рот */
+        .mouth {
+            width: 40px;
+            height: 12px;
+            background-color: #000;
+            border-radius: 10px;
+            position: absolute;
+            top: 70px;
+            left: 40px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="kenny character">
+        <div class="hood"></div>
+        <div class="body"></div>
+        <div class="eyes">
+            <div class="left-eye"></div>
+            <div class="right-eye"></div>
+        </div>
+        <div class="mouth"></div>
+    </div>
+
+    <div class="stan character">
+        <div class="hat"></div>
+        <div class="body"></div>
+        <div class="eyes">
+            <div class="left-eye"></div>
+            <div class="right-eye"></div>
+        </div>
+        <div class="mouth"></div>
+    </div>
+
+    <div class="kyle character">
+        <div class="hat"></div>
+        <div class="body"></div>
+        <div class="eyes">
+            <div class="left-eye"></div>
+            <div class="right-eye"></div>
+        </div>
+        <div class="mouth"></div>
+    </div>
+</body>
+</html>

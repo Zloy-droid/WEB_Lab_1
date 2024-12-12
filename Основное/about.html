@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О разработчике</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .developer-info {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        .developer-info img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            margin-right: 20px;
+        }
+        .developer-info div {
+            max-width: 500px;
+        }
+        .skills {
+            margin-top: 20px;
+        }
+        .skill-bar {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+        }
+        .skill-bar span {
+            width: 200px;
+        }
+        .bar {
+            flex-grow: 1;
+            height: 20px;
+            background-color: #ddd;
+            margin-left: 10px;
+            border-radius: 5px;
+        }
+        .bar span {
+            display: block;
+            height: 100%;
+            border-radius: 5px;
+        }
+        .bar .rest {
+            background-color: #e44d26;
+        }
+        .bar .sleep {
+            background-color: #2965f1;
+        }
+        .bar .cSharp {
+            background-color: #f7df1e;
+        }
+        .bar .unity {
+            background-color: #306998;
+        }
+        .bar .cooking {
+            background-color: #777bb3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="img/logo.jpeg" alt="Логотип">
+        <nav>
+            <ul>
+                <li><a href="Yasynuvata.html">Главная</a></li>
+                <li><a href="about.html">О разработчике</a></li>
+                <li><a href="history.html">История города</a></li>
+                <li><a href="infrastructure.html">Инфраструктура города</a></li>
+                <li><a href="culture.html">Культура и искусство</a></li>
+                <li><a href="contact.html">Форма обратной связи</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="developer-info">
+            <img src="img/developer.jpeg">
+            <div>
+                <h2>О разработчике</h2>
+                <p>Я — чиловый парень, и меня заставляют все делать.Я устал.</p>
+            </div>
+        </section>
+
+        <section class="skills">
+            <h3>Мои навыки</h3>
+            <div class="skill-bar">
+                <span>Отдых</span>
+                <div class="bar">
+                    <span style="width: 90%;" class="rest"></span>
+                </div>
+                <span>90%</span>
+            </div>
+            <div class="skill-bar">
+                <span>Сон</span>
+                <div class="bar">
+                    <span style="width: 85%;" class="sleep"></span>
+                </div>
+                <span>85%</span>
+            </div>
+            <div class="skill-bar">
+                <span>C#</span>
+                <div class="bar">
+                    <span style="width: 80%;" class="cSharp"></span>
+                </div>
+                <span>80%</span>
+            </div>
+            <div class="skill-bar">
+                <span>Unity</span>
+                <div class="bar">
+                    <span style="width: 75%;" class="unity"></span>
+                </div>
+                <span>75%</span>
+            </div>
+            <div class="skill-bar">
+                <span>Готовка</span>
+                <div class="bar">
+                    <span style="width: 10%;" class="cooking"></span>
+                </div>
+                <span>10%</span>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024</p>
+    </footer>
+</body>
+</html>
